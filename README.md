@@ -14,7 +14,7 @@ The catalog comes from
 (MIT, Ryan Montgomery), vendored as a git submodule and regenerated with
 `go generate`
 
-![demo](.github/assets/demo.gif
+![demo](.github/assets/demo.gif)
 
 ## Install
 
