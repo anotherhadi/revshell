@@ -22,7 +22,6 @@ archives:
     name_template: "revshell_{{ .Version }}_{{ .Os }}_{{ .Arch }}"
     files:
       - LICENSE
-      - NOTICE
       - README.md
 
 checksum:
