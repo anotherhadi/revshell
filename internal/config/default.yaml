@@ -1,0 +1,32 @@
+# revshell defaults.
+#
+# Do not copy this file: put only what you change in one of these (later wins):
+#
+#   ~/.config/sectui/config.yaml   shared by every sectui tool (theme, keys)
+#   ~/.config/revshell/config.yaml revshell, everywhere
+
+# By command ID: a key, a list, or [] for none (palette only). foam's own:
+# list, viewer, help, palette, confirm, prompt, form.
+keys:
+  app:
+    quit: [q, ctrl+c]
+    help: "?"
+    palette: ctrl+p
+  focus:
+    list: alt+1
+    preview: alt+2
+  pane:
+    left: [ctrl+h, alt+h]
+    down: [ctrl+j, alt+j]
+    up: [ctrl+k, alt+k]
+    right: [ctrl+l, alt+l]
+    zoom: alt+z           # the focused pane takes the whole window
+  settings:
+    open: ctrl+o          # the ip, port and shell of the rendered commands
+  view:
+    search: /             # jumps to the search field
+    escape: esc           # back to the list
+    category: c
+    os: o
+    encoding: e
+    copy: [y, enter]
