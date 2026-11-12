@@ -1,4 +1,4 @@
-module github.com/sectui/revshell/internal/gen
+module github.com/anotherhadi/revshell/internal/gen
 
 go 1.26.7
 

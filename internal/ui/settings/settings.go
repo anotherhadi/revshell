@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/sectui/foam/form"
+	"github.com/anotherhadi/foam/form"
 )
 
 // Vars are the values behind the catalog's {ip}/{port}/{shell} placeholders.

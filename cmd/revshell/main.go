@@ -1,5 +1,5 @@
 // Command revshell generates reverse/bind shell, MSFVenom, HoaxShell and
-// shellcode one-liners from the sectui/revshell catalog. With no
+// shellcode one-liners from the anotherhadi/revshell catalog. With no
 // arguments it opens the TUI; subcommands are for scripting.
 package main
 
@@ -12,7 +12,7 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/sectui/revshell/internal/ui"
+	"github.com/anotherhadi/revshell/internal/ui"
 )
 
 // Set with -ldflags "-X main.version=1.2.3".

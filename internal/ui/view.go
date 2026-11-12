@@ -8,13 +8,13 @@ import (
 	"charm.land/lipgloss/v2"
 	"github.com/charmbracelet/x/ansi"
 
-	"github.com/sectui/foam/draw"
-	"github.com/sectui/foam/geom"
-	"github.com/sectui/foam/minsize"
-	"github.com/sectui/foam/theme"
-	"github.com/sectui/foam/viewer"
+	"github.com/anotherhadi/foam/draw"
+	"github.com/anotherhadi/foam/geom"
+	"github.com/anotherhadi/foam/minsize"
+	"github.com/anotherhadi/foam/theme"
+	"github.com/anotherhadi/foam/viewer"
 
-	"github.com/sectui/revshell/internal/catalog"
+	"github.com/anotherhadi/revshell/internal/catalog"
 )
 
 // minSize is the smallest terminal revshell draws in.

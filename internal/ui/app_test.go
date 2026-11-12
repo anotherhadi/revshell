@@ -11,11 +11,11 @@ import (
 	tea "charm.land/bubbletea/v2"
 	"github.com/charmbracelet/x/ansi"
 
-	"github.com/sectui/foam"
-	fconfig "github.com/sectui/foam/config"
-	"github.com/sectui/foam/theme"
+	"github.com/anotherhadi/foam"
+	fconfig "github.com/anotherhadi/foam/config"
+	"github.com/anotherhadi/foam/theme"
 
-	"github.com/sectui/revshell/internal/config"
+	"github.com/anotherhadi/revshell/internal/config"
 )
 
 func init() { log.SetOutput(io.Discard) }

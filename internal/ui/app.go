@@ -8,18 +8,18 @@ import (
 
 	tea "charm.land/bubbletea/v2"
 
-	"github.com/sectui/foam/commands"
-	"github.com/sectui/foam/fuzzy"
-	"github.com/sectui/foam/geom"
-	"github.com/sectui/foam/input"
-	"github.com/sectui/foam/list"
-	"github.com/sectui/foam/notify"
-	"github.com/sectui/foam/overlay"
-	"github.com/sectui/foam/viewer"
+	"github.com/anotherhadi/foam/commands"
+	"github.com/anotherhadi/foam/fuzzy"
+	"github.com/anotherhadi/foam/geom"
+	"github.com/anotherhadi/foam/input"
+	"github.com/anotherhadi/foam/list"
+	"github.com/anotherhadi/foam/notify"
+	"github.com/anotherhadi/foam/overlay"
+	"github.com/anotherhadi/foam/viewer"
 
-	"github.com/sectui/revshell/internal/catalog"
-	"github.com/sectui/revshell/internal/config"
-	"github.com/sectui/revshell/internal/ui/settings"
+	"github.com/anotherhadi/revshell/internal/catalog"
+	"github.com/anotherhadi/revshell/internal/config"
+	"github.com/anotherhadi/revshell/internal/ui/settings"
 )
 
 type pane int

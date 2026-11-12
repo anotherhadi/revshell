@@ -8,8 +8,8 @@ import (
 
 	"github.com/spf13/pflag"
 
-	"github.com/sectui/foam/fuzzy"
-	"github.com/sectui/revshell/internal/catalog"
+	"github.com/anotherhadi/foam/fuzzy"
+	"github.com/anotherhadi/revshell/internal/catalog"
 )
 
 func runList(argv []string, out io.Writer) error {

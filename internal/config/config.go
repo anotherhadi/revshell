@@ -1,4 +1,4 @@
-// Package config loads revshell's configuration: the shared sectui theme and
+// Package config loads revshell's configuration: the shared foam theme and
 // its own keys, from the same layered files as operations and steep.
 package config
 
@@ -6,10 +6,10 @@ import (
 	_ "embed"
 	"path/filepath"
 
-	"github.com/sectui/foam"
-	"github.com/sectui/foam/commands"
-	fconfig "github.com/sectui/foam/config"
-	"github.com/sectui/foam/theme"
+	"github.com/anotherhadi/foam"
+	"github.com/anotherhadi/foam/commands"
+	fconfig "github.com/anotherhadi/foam/config"
+	"github.com/anotherhadi/foam/theme"
 )
 
 //go:embed default.yaml
@@ -25,7 +25,7 @@ func Load() (*Config, error) {
 		Name: "revshell",
 		Base: [][]byte{foam.Defaults, Defaults},
 		Files: []string{
-			filepath.Join(fconfig.Dir("sectui"), "config.yaml"),
+			filepath.Join(fconfig.Dir("foam"), "config.yaml"),
 			filepath.Join(fconfig.Dir("revshell"), "config.yaml"),
 		},
 	}, nil)

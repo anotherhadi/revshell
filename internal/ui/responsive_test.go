@@ -8,8 +8,8 @@ import (
 	tea "charm.land/bubbletea/v2"
 	"github.com/charmbracelet/x/ansi"
 
-	"github.com/sectui/foam/notify"
-	"github.com/sectui/foam/theme"
+	"github.com/anotherhadi/foam/notify"
+	"github.com/anotherhadi/foam/theme"
 )
 
 // checkScreen asserts that the view fills w×h exactly. The renderer drops

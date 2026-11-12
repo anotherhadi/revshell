@@ -1,13 +1,13 @@
 ```
-█▀▀ █▀▀ █▀▀ ▀█▀ █ █ █   ▄▀ █▀█ █▀▀ █ █ █▀▀ █ █ █▀▀ █   █  
-▄▄█ ██▄ █▄▄  █  █▄█ █ ▄▀   █▀▄ ██▄ ▀▄▀ ▄▄█ █▀█ ██▄ █▄▄ █▄▄
+█▀█ █▀▀ █ █ █▀▀ █ █ █▀▀ █   █  
+█▀▄ ██▄ ▀▄▀ ▄▄█ █▀█ ██▄ █▄▄ █▄▄
 ```
 
 # Revshell: reverse/bind shell one-liners, fast
 
 Fill `{ip}`/`{port}`/`{shell}` into known reverse shell, bind shell, MSFVenom,
 HoaxShell and shellcode one-liners from a searchable TUI or a scriptable CLI.
-Part of the **sectui** tools.
+Part of the [foam](https://github.com/anotherhadi/foam) tools.
 
 The catalog comes from
 [0dayCTF/reverse-shell-generator](https://github.com/0dayCTF/reverse-shell-generator)
@@ -21,24 +21,24 @@ The catalog comes from
 With go:
 
 ```sh
-go install github.com/sectui/revshell/cmd/revshell@latest
+go install github.com/anotherhadi/revshell/cmd/revshell@latest
 ```
 
-With Nix, from the [sectui NUR](https://github.com/sectui/nur):
+With Nix, from the [anotherhadi NUR](https://github.com/anotherhadi/nur):
 
 ```sh
-nix run github:sectui/nur#revshell
+nix run github:anotherhadi/nur#revshell
 ```
 
 ```nix
-# flake: inputs.nur-sectui.url = "github:sectui/nur";
-environment.systemPackages = [ nur-sectui.packages.${system}.revshell ];
+# flake: inputs.nur-anotherhadi.url = "github:anotherhadi/nur";
+environment.systemPackages = [ nur-anotherhadi.packages.${system}.revshell ];
 
 # or through NUR
-environment.systemPackages = [ pkgs.nur.repos.sectui.revshell ];
+environment.systemPackages = [ pkgs.nur.repos.anotherhadi.revshell ];
 ```
 
-Each [GitHub release](https://github.com/sectui/revshell/releases) has an
+Each [GitHub release](https://github.com/anotherhadi/revshell/releases) has an
 archive per platform (Linux, macOS, Windows and FreeBSD, amd64 and arm64) with
 the `revshell` binary, and a `SHA256SUMS` file.
 

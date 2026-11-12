@@ -5,9 +5,9 @@ package ui
 import (
 	tea "charm.land/bubbletea/v2"
 
-	"github.com/sectui/foam/theme"
+	"github.com/anotherhadi/foam/theme"
 
-	"github.com/sectui/revshell/internal/config"
+	"github.com/anotherhadi/revshell/internal/config"
 )
 
 func Run() error {

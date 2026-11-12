@@ -1,11 +1,11 @@
-module github.com/sectui/revshell
+module github.com/anotherhadi/revshell
 
 go 1.26.7
 
 require (
 	charm.land/bubbletea/v2 v2.1.1
 	github.com/charmbracelet/x/ansi v0.11.9
-	github.com/sectui/foam v0.0.2
+	github.com/anotherhadi/foam v0.0.2
 	github.com/spf13/pflag v1.0.10
 )
 

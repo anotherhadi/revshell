@@ -2,7 +2,7 @@
 #
 # Do not copy this file: put only what you change in one of these (later wins):
 #
-#   ~/.config/sectui/config.yaml   shared by every sectui tool (theme, keys)
+#   ~/.config/foam/config.yaml   shared by every foam tool (theme, keys)
 #   ~/.config/revshell/config.yaml revshell, everywhere
 
 # By command ID: a key, a list, or [] for none (palette only). foam's own:

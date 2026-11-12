@@ -3,15 +3,15 @@ package ui
 import (
 	tea "charm.land/bubbletea/v2"
 
-	"github.com/sectui/foam/commands"
-	"github.com/sectui/foam/form"
-	"github.com/sectui/foam/geom"
-	"github.com/sectui/foam/help"
-	"github.com/sectui/foam/notify"
-	"github.com/sectui/foam/overlay"
-	"github.com/sectui/foam/palette"
+	"github.com/anotherhadi/foam/commands"
+	"github.com/anotherhadi/foam/form"
+	"github.com/anotherhadi/foam/geom"
+	"github.com/anotherhadi/foam/help"
+	"github.com/anotherhadi/foam/notify"
+	"github.com/anotherhadi/foam/overlay"
+	"github.com/anotherhadi/foam/palette"
 
-	"github.com/sectui/revshell/internal/catalog"
+	"github.com/anotherhadi/revshell/internal/catalog"
 )
 
 // global are always active: the search field already got the printable keys.
