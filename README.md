@@ -24,14 +24,14 @@ With go:
 go install github.com/anotherhadi/revshell/cmd/revshell@latest
 ```
 
-With Nix, from the [anotherhadi NUR](https://github.com/anotherhadi/nur):
+With Nix, from the [anotherhadi NUR](https://github.com/anotherhadi/nur-packages):
 
 ```sh
-nix run github:anotherhadi/nur#revshell
+nix run github:anotherhadi/nur-packages#revshell
 ```
 
 ```nix
-# flake: inputs.nur-anotherhadi.url = "github:anotherhadi/nur";
+# flake: inputs.nur-anotherhadi.url = "github:anotherhadi/nur-packages";
 environment.systemPackages = [ nur-anotherhadi.packages.${system}.revshell ];
 
 # or through NUR
