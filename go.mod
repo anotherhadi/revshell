@@ -4,13 +4,13 @@ go 1.26.7
 
 require (
 	charm.land/bubbletea/v2 v2.1.1
+	charm.land/lipgloss/v2 v2.0.6
+	github.com/anotherhadi/foam v0.0.6
 	github.com/charmbracelet/x/ansi v0.11.9
-	github.com/anotherhadi/foam v0.0.2
 	github.com/spf13/pflag v1.0.10
 )
 
 require (
-	charm.land/lipgloss/v2 v2.0.6 // indirect
 	github.com/charmbracelet/colorprofile v0.4.3 // indirect
 	github.com/charmbracelet/ultraviolet v0.0.0-20261008173134-6b8d4baf91b4 // indirect
 	github.com/charmbracelet/x/term v0.2.2 // indirect
